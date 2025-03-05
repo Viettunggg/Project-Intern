@@ -17,6 +17,30 @@
         console.log("Bootstrap JS loaded:", typeof bootstrap !== "undefined");
     </script>
     
+    <script>
+      function toggleDropdown() {
+        const content = document.querySelector(".dropdown-content");
+        const icon = document.querySelector(".dropdown-header .icon");
+        content.style.display = content.style.display === "block" ? "none" : "block";
+        icon.textContent = content.style.display === "block" ? "✖" : "+";
+      }
+
+      function toggleFAQ(element) {
+        const parent = element.parentElement;
+        const answer = parent.querySelector('.faq-answer');
+        const icon = element.querySelector('.icon');
+        
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            icon.textContent = "▼";
+        } else {
+            answer.style.display = "block";
+            icon.textContent = "▲";
+        }
+      }
+    </script>
+
+
     <div id="app" >
         <div class="header">MEGA HOLIDAYS 50% SALE</div>
         <div class="marquee-container">
@@ -187,7 +211,7 @@
           </div>
         </div>
         <!-- Cotainer 4 -->
-        <div style="margin-top:5% ;" class="container">
+        <div style="margin-top:5%; padding-bottom: 2%;" class="container">
           <div class="row">
             <div class="col">
               <img style="border-radius: 15px;" src="./img/Rectangle 12.png" alt="">
@@ -208,6 +232,193 @@
             </div>
           </div>
         </div>
+        <!-- Product -->
+        <div class="product">
+          <div class="container mt-5">
+            <div class="product-card">
+              <div class="row g-4">
+                <div class="col-md-8">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img style="border-radius: 3%;" src="./img/Rec16.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img style="border-radius: 3%;" src="./img/Rec14.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img style="border-radius: 3%;" src="./img/Rec15.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h1 style="font-weight: bold;" >Laundry Shoe Bag</h1>
+                  <p>⭐⭐⭐⭐⭐ 4.8 (3442 Verified Reviews)</p>
+                  <p>
+                    <span class="product-old-price">$59.20</span>
+                    <span class="product-price">$24.65</span>
+                    <span class="badge bg-success">SAVE 58%</span>
+                  </p>
+                  <p><strong>Color:</strong>
+                    <div class="color-options">
+                      <label>
+                          <input type="radio" name="color" value="yellow" checked>
+                          <span class="color-circle yellow"></span>
+                      </label>
+                      <label>
+                          <input type="radio" name="color" value="black">
+                          <span class="color-circle black"></span>
+                      </label>
+                      <label>
+                          <input type="radio" name="color" value="white">
+                          <span class="color-circle white"></span>
+                      </label>
+                      <label>
+                          <input type="radio" name="color" value="blue">
+                          <span class="color-circle blue"></span>
+                      </label>
+                    </div>
+                  </p>
+                  <div class="container_text">
+                    <div style="text-align: center;" class="row">
+                      <div class="col-6">
+                        <p>✅ No more hand pain</p>
+                      </div>
+                      <div class="col-6">
+                        <p>✅ Cleaning is easy</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-container">
+                    <div style="font-size: 16px; color: #000000;" class="dropdown-header" onclick="toggleDropdown()">
+                      <span class="title">✔ What's Included:</span>
+                      <span style="margin-left: 200px;" class="icon">+</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                          <li>Gently & safely clean all types & sizes of shoes in minutes</li>
+                          <li>Wash shoes quickly, deep clean, kill <strong>99%</strong> of dirt and unpleasant odors!</li>
+                          <li>Protect your favorite shoes right in the washing machine</li>
+                          <li>Don't worry about losing form, fading color or damaging material.</li>
+                        </ul>
+                    </div>
+                  </div>
+                
+                  <div class="stock-info">
+                    <p style="margin-bottom: 5%; font-size: 20px;">🔥 <strong>Stock is Limited:</strong> <strong>103</strong> units remaining at this price.</p>
+                    <p style="margin-bottom: 5%; font-size: 20px;">🟢 <strong>4167</strong> People are viewing this right now</p>
+                  </div>
+                  
+                  <button class="claim-offer">CLAIM OFFER</button>
+                  
+                  <div class="delivery-info">
+                    <div class="container">
+                      <div style="text-align: center;" class="row">
+                        <div class="col-6">
+                          <p>🚚 Delivery in <b style="font-size: 18px;">7-12</b> Days</p>
+                        </div>
+                        <div class="col-6">
+                          <p>⚙️ <b style="font-size: 18px;">30</b> Days Returns No Reason</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="payment-icons">
+                      <img src="./icon/amex.svg" alt="AMEX">
+                      <img src="./icon/discover.svg" alt="Discover">
+                      <img src="./icon/mastercard.svg" alt="Mastercard">
+                      <img src="./icon/visa.svg" alt="Visa">
+                      <img src="./icon/google-pay.svg" alt="Google Pay">
+                      <img src="./icon/applepay.svg" alt="Apple Pay">
+                  </div>
+                  
+                  <a href="#" class="view-details">View full details →</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <!-- Dropdown -->
+        <div style="margin-bottom: 5%;" class="faq-container">
+          <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  🏀 <span>How do I dry the shoes?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">
+                  Great question. There's actually 3 ways you can do that:
+                  <br>1- Air dry them
+                  <br>2- Toss the shoes bags inside the dryer
+                  <br>3- Use our unsoak shoe dryer available on our website
+              </div>
+          </div>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  👟 <span>Do 2 shoes fit in 1 shoe bag?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">Yes, our shoe bags are designed to fit two shoes comfortably.</div>
+          </div>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  🔊 <span>Does it make noise in the washing machine?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">No, our shoe bags are designed to minimize noise.</div>
+          </div>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  📦 <span>What's included?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">Each package includes 1 shoe bag and a detailed guide.</div>
+          </div>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  📖 <span>How do I use it?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">Simply place your shoes in the bag and put them in the washing machine.</div>
+          </div>
+      
+          <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                  ✅ <span>Do you have any guarantees?</span> 
+                  <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">Yes, we offer a 30-day return policy with no questions asked.</div>
+          </div>
+      
+        </div>
+        <div class="marquee-container">
+          <div class="marquee-content">
+              <span>free shipping nationwide </span>
+              <span>USE CODE Save5 FOR $5 OFF </span>
+              <span>WORLWIDE SHIPPING</span>
+              <span>Don't miss the chance!</span>
+              <span>free shipping nationwide </span>
+              <span>USE CODE Save5 FOR $5 OFF </span>
+              <span>WORLWIDE SHIPPING</span>
+              <span>Don't miss the chance!</span>
+          </div>
+      </div>
+      
     </div>
 
 </body>
