@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Shop.css" />
+    <title>Shop Now</title>
+    <!-- Bootstrap 5.0 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5.0 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">MEGA HOLIDAYS 50% SALE</div>
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>free shipping nationwide </span>
+          <span>USE CODE Save5 FOR $5 OFF </span>
+          <span>WORLWIDE SHIPPING</span>
+          <span>Don't miss the chance!</span>
+          <span>free shipping nationwide </span>
+          <span>USE CODE Save5 FOR $5 OFF </span>
+          <span>WORLWIDE SHIPPING</span>
+          <span>Don't miss the chance!</span>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Shop.html">Shop now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Catalog.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Tracking.html">Tracking Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              style="font-size: 32px; font-weight: bold"
+              class="navbar-brand mx-auto fw-bold fs-3"
+              href="#"
+              >LOGO</a
+            >
+          </div>
+          <div class="icon-links d-flex align-items-center">
+            <a href="#"><i class="bi bi-search"></i></a>
+            <a href="#"><i class="bi bi-bag"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="container_img">
+          <img
+            id="mainImage"
+            src="./img/Rec14.png"
+            alt="Large Image"
+            class="img-fluid"
+          />
+          <div class="thumbnail-container">
+            <img
+              src="./img/Rec14.png"
+              alt="Small Image 1"
+              class="thumbnail"
+              onclick="changeImage('./img/Rec14.png')"
+            />
+            <img
+              src="./img/Rec15.png"
+              alt="Small Image 2"
+              class="thumbnail"
+              onclick="changeImage('./img/Rec15.png')"
+            />
+            <img
+              src="./img/Rec16.png"
+              alt="Small Image 3"
+              class="thumbnail"
+              onclick="changeImage('./img/Rec16.png')"
+            />
+          </div>
+        </div>
+        <div class="container_content">
+          <!-- Banner thông báo giảm giá -->
+          <div class="sale-banner">NEW YEAR SALE | BEST PRODUCT 2025</div>
+
+          <!-- Tiêu đề sản phẩm -->
+          <h1 class="product__title">Laundry Shoe Bag</h1>
+
+          <!-- Đánh giá sản phẩm -->
+          <div class="product__rating">
+            ⭐⭐⭐⭐✩ <span class="product__rating-score">4.8</span> (<span
+              class="product__reviews"
+              >2598 Verified Reviews</span
+            >)
+          </div>
+
+          <!-- Số lượng người đang xem -->
+          <div class="product__viewers">
+            <span class="icon-dot">🟢</span>
+            <strong>4167</strong> People are viewing this right now
+          </div>
+
+          <!-- Cảnh báo số lượng hàng còn lại -->
+          <div class="product__stock">
+            <span class="icon-fire">🔥</span>
+            <strong>Stock is Limited:</strong>
+            <span class="product__stock-count">103</span> units remaining at
+            this price.
+          </div>
+
+          <!-- Thông báo khuyến mãi -->
+          <div class="product__alert">
+            <strong>UPDATE:</strong> unstain is
+            <strong>SELLING OUT</strong> faster than expected! Lock in your
+            order Now to get <span class="highlight">50% OFF</span>.
+          </div>
+
+          <!-- Lợi ích sản phẩm -->
+          <ul class="product__benefits">
+            <li>
+              🧼 Gently & safely clean all types & sizes of shoes in minutes
+            </li>
+            <li>
+              ✅ Wash shoes quickly, deep clean, kill <strong>99%</strong> of
+              dirt and unpleasant odors!
+            </li>
+            <li>🌿 Protect your favorite shoes right in the washing machine</li>
+          </ul>
+
+          <!-- Mẹo mua hàng -->
+          <div class="product__tip">
+            💡 <strong>Save 60%</strong> when buying 2 or more products or
+            buying a combination
+          </div>
+
+          <!-- Chọn gói ưu đãi -->
+          <h5 class="product__offer-title">Choose your offer</h5>
+
+          <label class="offer">
+            <input type="radio" name="offer" checked />
+            <div class="offer__details">
+              <span class="offer__name">1 Shoe bag</span>
+              <span class="offer__discount">Save 50%</span>
+              <span class="offer__price">$24.65</span>
+              <span class="offer__old-price">$97.20</span>
+            </div>
+          </label>
+
+          <label class="offer">
+            <input type="radio" name="offer" />
+            <div class="offer__details">
+              <span class="offer__name">2 Shoe bags</span>
+              <span class="offer__discount">Save an extra 10% per bag</span>
+              <span class="offer__price">$45.36</span>
+              <span class="offer__old-price">$118.40</span>
+            </div>
+          </label>
+
+          <label class="offer">
+            <input type="radio" name="offer" />
+            <div class="offer__details">
+              <span class="offer__name">2 Shoe bags</span>
+              <span class="offer__discount">Save an extra 10% per bag</span>
+              <span class="offer__price">$45.36</span>
+              <span class="offer__old-price">$118.40</span>
+            </div>
+          </label>
+
+          <label class="offer">
+            <input type="radio" name="offer" />
+            <div class="offer__details">
+              <span class="offer__name">2 Shoe bags</span>
+              <span class="offer__discount">Save an extra 10% per bag</span>
+              <span class="offer__price">$45.36</span>
+              <span class="offer__old-price">$118.40</span>
+            </div>
+          </label>
+
+          <button class="add_to_cart">ADD TO CART</button>
+
+          <button class="pay_with">Pay with</button>
+
+          <a href="#" class="moro_payment_options">More payment options</a>
+
+          <h5>Over 20M view on Facebook</h5>
+
+          <div class="feerback_fb">
+            <img src="./img/Rectangle 12.png" alt="" />
+            <span>
+              "Great product! The quality is excellent, easy to use, and
+              delivers results quickly. I'm really satisfied and will definitely
+              continue to support in the future!"
+            </span>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/1.png " alt="Washing Machine Tablets" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                MULTI-PURPOSE WASHING MACHINE CLEANING TABLETS
+              </h3>
+              <div class="product-details">
+                <span class="quantity">5 piece</span>
+                <span class="price original-price">$25.00</span>
+                <span class="price discounted-price">$9.95</span>
+              </div>
+            </div>
+            <div class="toggle-switch">
+              <label class="switch">
+                <input type="checkbox" id="discountToggle" checked />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/1.png " alt="Washing Machine Tablets" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                MULTI-PURPOSE WASHING MACHINE CLEANING TABLETS
+              </h3>
+              <div class="product-details">
+                <span class="quantity">5 piece</span>
+                <span class="price original-price">$25.00</span>
+                <span class="price discounted-price">$9.95</span>
+              </div>
+            </div>
+            <div class="toggle-switch">
+              <label class="switch">
+                <input type="checkbox" id="discountToggle" checked />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/1.png " alt="Washing Machine Tablets" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                MULTI-PURPOSE WASHING MACHINE CLEANING TABLETS
+              </h3>
+              <div class="product-details">
+                <span class="quantity">5 piece</span>
+                <span class="price original-price">$25.00</span>
+                <span class="price discounted-price">$9.95</span>
+              </div>
+            </div>
+            <div class="toggle-switch">
+              <label class="switch">
+                <input type="checkbox" id="discountToggle" checked />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div style="margin-bottom: 5%" class="faq-container">
+            <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                🏀 <span>Storage instructions</span>
+                <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">
+                Great question. There's actually 3 ways you can do that:
+                <br />1- Air dry them <br />2- Toss the shoes bags inside the
+                dryer <br />3- Use our unsoak shoe dryer available on our
+                website
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                👟 <span>Shipping policy</span>
+                <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">
+                Yes, our shoe bags are designed to fit two shoes comfortably.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this)">
+                🔊 <span>Refun policy</span>
+                <span class="icon">▼</span>
+              </div>
+              <div class="faq-answer">
+                No, our shoe bags are designed to minimize noise.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container feerback -->
+      <div class="container_feerback">
+        <h1
+          style="
+            text-align: center;
+            margin: 2% 0;
+            font-weight: 700;
+            color: #000000;
+            font-size: 32px;
+          "
+        >
+          <span style="color: #009b4d">Real</span>people,
+          <span style="color: #009b4d">real</span> result
+        </h1>
+
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="video-container">
+                  <img src="./img/1.png" alt="Video Thumbnail" />
+                  <div class="play-button">▶</div>
+                </div>
+                <h5 class="mt-3">⭐⭐⭐⭐⭐</h5>
+                <h5><strong>...My hands are happier from now on</strong></h5>
+                <p>
+                  Shoe washing bag helps me get rid of the obsession with
+                  washing shoes by hand.
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <img
+                    class="profile-img"
+                    src="./img/poster 11-Recovered-Recovered.png"
+                    alt="Profile"
+                  />
+                  <span><strong>Emiliana Patriot</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="video-container">
+                  <img src="./img/2.png" alt="Video Thumbnail" />
+                  <div class="play-button">▶</div>
+                </div>
+                <h5 class="mt-3">⭐⭐⭐⭐⭐</h5>
+                <h5><strong>...It helps my family feel confident</strong></h5>
+                <p>
+                  Since I got the laundry bag I feel liberated, it helps my
+                  shoes look newer.
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <img
+                    class="profile-img"
+                    src="./img/poster 11-Recovered-Recovered.png"
+                    alt="Profile"
+                  />
+                  <span><strong>Astrid van Amerongen</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <div class="video-container">
+                  <img src="./img/3.png" alt="Video Thumbnail" />
+                  <div class="play-button">▶</div>
+                </div>
+                <h5 class="mt-3">⭐⭐⭐⭐⭐</h5>
+                <h5><strong>...It helps my family feel confident</strong></h5>
+                <p>
+                  Since I got the laundry bag I feel liberated, it helps my
+                  shoes look newer.
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <img
+                    class="profile-img"
+                    src="./img/poster 11-Recovered-Recovered.png"
+                    alt="Profile"
+                  />
+                  <span><strong>Astrid van Amerongen</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          <h1>
+            Nếu bạn ghét giặt giày và lo lắng rằng chúng sẽ bị hỏng do mất dáng,
+            phai màu hoặc co rút?
+          </h1>
+
+          <p>
+            Chúng tôi biết điều này có thể gây
+            <span class="highlight">khó chịu</span> như thế nào. Chúng tôi đều
+            đã từng trải qua.
+          </p>
+
+          <p>
+            Đừng gặp rắc rối khi giặt tay đôi giày yêu thích của bạn bằng các
+            vật liệu khắc nghiệt như
+            <span class="highlight"
+              >baking soda, than hoạt tính hoặc các sản phẩm hóa học</span
+            >
+            có thể có tác dụng đối với một số vết bẩn, nhưng chúng lại khắc
+            nghiệt đối với giày của bạn và thường làm hỏng các vật liệu mỏng
+            manh cũng như làm thay đổi hình dạng của giày.
+          </p>
+
+          <p>
+            Túi giặt giày không vết bẩn của chúng tôi là túi giặt giày nhiều lớp
+            đầu tiên trên thế giới được trang bị hơn
+            <span class="highlight">1500 sợi lông mềm</span> có thể khuấy động
+            và làm sạch <span class="highlight">99%</span> bụi bẩn trên giày của
+            bạn chỉ trong vài phút mà không lo làm hỏng giày hoặc máy giặt của
+            bạn.
+          </p>
+        </div>
+      </div>
+      <div class="video_review_container_1">
+        <div class="text-section">
+          <h1>Dễ dàng loại bỏ bụi bẩn khỏi giày, chỉ trong vài phút</h1>
+          <p>
+            Túi giặt giày của chúng tôi có hơn 1500 sợi lông mềm bên trong, tất
+            cả hoạt động hài hòa để đảm bảo trải nghiệm làm sạch dễ dàng và tối
+            ưu, mà không làm hỏng giày của bạn.
+          </p>
+          <p>
+            Những sợi lông nhẹ nhàng, hiệu quả này có thể loại bỏ 99% bùn đất
+            khỏi giày của bạn ngay lập tức.
+          </p>
+          <p>
+            Không giống như các phương pháp thông thường chỉ dựa vào nước và
+            chất tẩy rửa, sợi lông của chúng tôi có tác động chà rửa sâu có thể
+            làm sạch ngay cả những vết bẩn cứng đầu nhất.
+          </p>
+        </div>
+        <div class="image-section">
+          <img
+            src="./img/Rectangle 12.png"
+            alt="Túi giặt giày trong máy giặt"
+          />
+        </div>
+      </div>
+      <div class="video_review_container_2">
+        <div class="image-section">
+          <img
+            src="./img/Rectangle 12.png"
+            alt="Túi giặt giày trong máy giặt"
+          />
+        </div>
+        <div class="text-section">
+          <h1>Dễ dàng loại bỏ bụi bẩn khỏi giày, chỉ trong vài phút</h1>
+          <p>
+            Túi giặt giày của chúng tôi có hơn 1500 sợi lông mềm bên trong, tất
+            cả hoạt động hài hòa để đảm bảo trải nghiệm làm sạch dễ dàng và tối
+            ưu, mà không làm hỏng giày của bạn.
+          </p>
+          <p>
+            Những sợi lông nhẹ nhàng, hiệu quả này có thể loại bỏ 99% bùn đất
+            khỏi giày của bạn ngay lập tức.
+          </p>
+          <p>
+            Không giống như các phương pháp thông thường chỉ dựa vào nước và
+            chất tẩy rửa, sợi lông của chúng tôi có tác động chà rửa sâu có thể
+            làm sạch ngay cả những vết bẩn cứng đầu nhất.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_content_2">
+        <div class="text-section">
+          <h1>Before and after using shoe cleaning bag</h1>
+          <p>
+            Shoe bags help protect shoes from dirt and damage during washing,
+            easy to remove and wash, keeping shoes clean and durable. Image
+            proof on the side.
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              src=" ./img/jorg-angeli-CAMwIxYk5Xg-unsplash.jpg"
+              alt="Trước và sau khi sử dụng túi giặt giày"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container_content_3">
+        <div class="image-section">
+          <img src="./img/Rectangle 13.png" alt="Cận cảnh túi giặt giày" />
+        </div>
+        <div class="text-section">
+          <div class="title">
+            <h2>Fits all shoe types and sizes</h2>
+          </div>
+          <p>
+            Whether it's sneakers, sandals, boots, kids shoes, running shoes,
+            even delicate dress shoes, some medium sized teddy bears, this
+            versatile laundry bag is designed to hold it all.
+          </p>
+          <p>
+            No need to worry about style or size compatibility. The spacious and
+            durable interior ensures that even bulky or oddly shaped shoes can
+            be cleaned without any hassle.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_content_4">
+        <div class="left-section">
+          <div class="title">
+            <h1>56,874+ Cleaner shoes & happier feet</h1>
+          </div>
+          <img src="./img/Rectangle 73.png" alt="Những người đi giày sạch sẽ" />
+        </div>
+        <div class="right-section">
+          <h2>Are you ready to join them?</h2>
+          <div class="stat">
+            <div class="percent">98%</div>
+            <p>
+              Claimed that their shoes were completely clean and free of dirt &
+              odor just after I washed them
+            </p>
+          </div>
+          <div class="stat">
+            <div class="percent">94%</div>
+            <p>
+              No fading, material damage or loss of shape after multiple washes
+            </p>
+          </div>
+          <div class="stat">
+            <div class="percent">90%</div>
+            <p>
+              Said the odor and residual shoe odor was completely gone after I
+              washed them
+            </p>
+          </div>
+          <div class="rating">
+            <img src="stars.png" alt="Xếp hạng sao" />
+            <p>RATED 4.9/5 BY 56,874+ HAPPY PEOPLE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="slide"><img src="/img/1.png" alt="Image 1" /></div>
+            <div class="slide"><img src="/img/2.png" alt="Image 2" /></div>
+            <div class="slide"><img src="/img/3.png" alt="Image 3" /></div>
+            <div class="slide"><img src="image4.jpg" alt="Image 4" /></div>
+            <div class="slide"><img src="image5.jpg" alt="Image 5" /></div>
+            <div class="slide"><img src="image6.jpg" alt="Image 6" /></div>
+            <div class="slide"><img src="image7.jpg" alt="Image 7" /></div>
+            <div class="slide"><img src="image8.jpg" alt="Image 8" /></div>
+            <div class="slide"><img src="image9.jpg" alt="Image 9" /></div>
+          </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="container_instructions">
+        <div class="instructions">
+          <!-- Cột bên trái: Tiêu đề -->
+          <div class="text-section">
+            <h1>How to use it?</h1>
+            <p>
+              With just 4 simple steps: put your shoes in a laundry bag, choose
+              a gentle wash cycle, wash at low temperature and dry naturally,
+              your shoes will always be clean and durable.
+            </p>
+          </div>
+
+          <!-- Cột bên phải: 4 bước hướng dẫn -->
+          <div class="steps">
+            <div class="step">
+              <div class="step-icon">01</div>
+              <div class="step-content">
+                <h3>Put the shoes in the bag and lock it.</h3>
+                <p>
+                  Simply place your shoes in a protective bag. Add a little
+                  detergent inside and outside of the bag. Zip it up and throw
+                  it in the washing machine.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">02</div>
+              <div class="step-content">
+                <h3>Set and select the appropriate wash cycle</h3>
+                <p>
+                  Add detergent (liquid or tablet) and select "low temperature"
+                  or "gentle" for the wash cycle.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">03</div>
+              <div class="step-content">
+                <h3>Let the washing machine do the work for you!</h3>
+                <p>
+                  Now you can happily enjoy a cup of coffee or read a few books
+                  while waiting for your clean shoes when the washing is
+                  finished.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">04</div>
+              <div class="step-content">
+                <h3>Dry Shoes</h3>
+                <p>
+                  You can either air dry your shoes or shove the laundry shoe
+                  bags (with the shoes inside) in the dryer - yes, it's
+                  perfectly fine! Or you can use our shoe dryer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //combo -->
+      <div class="combo-container">
+        <div class="combo-header">
+          <h2>Discover great combos, deep discounts, only at THE NHOO</h2>
+          <p>
+            Buy combo save, get outstanding value - Limited time offer, hurry up
+          </p>
+        </div>
+        <div class="combo-text">
+          <div class="combo-item">
+            <img src="./img/1.png" alt="Laundry Shoe Bag" />
+            <div class="item-details">
+              <h3>Laundry Shoe Bag</h3>
+              <p class="old-price">$59.20</p>
+              <p class="new-price">$24.65</p>
+            </div>
+          </div>
+          <div class="combo-item">
+            <img src="./img/2.png" alt="Shoe Dryer And Deodorizer" />
+            <div class="item-details">
+              <h3>Shoe Dryer And Deodorizer</h3>
+              <p class="old-price">$95.00</p>
+              <p class="new-price">$64.45</p>
+            </div>
+          </div>
+          <div class="combo-item">
+            <img
+              src="./img/3.png"
+              alt="Multi-Purpose Washing Machine Cleaning Tablets"
+            />
+
+            <div class="item-details">
+              <h3>Multi-Purpose Washing Machine Cleaning Tablets</h3>
+              <p class="old-price">$25.00</p>
+              <p class="new-price">$9.95</p>
+            </div>
+          </div>
+          <div class="combo-item">
+            <img
+              src="./img/1.png"
+              alt="Washing Machine & Clothes Dryer Drum Cleaning Brush"
+            />
+            <div class="item-details">
+              <h3>Washing Machine & Clothes Dryer Drum Cleaning Brush</h3>
+              <p class="old-price">$15.00</p>
+              <p class="new-price">$8.95</p>
+            </div>
+          </div>
+          <div class="combo-item">
+            <img
+              src="./img/1.png"
+              alt="Washing Machine & Clothes Dryer Drum Cleaning Brush"
+            />
+            <div class="item-details">
+              <h3>
+                4.5cm TPE Spiked Massage Ball - Pain Relief, Muscle & Leg
+                Relaxation
+              </h3>
+              <p class="old-price">$15.00</p>
+              <p class="new-price">$8.95</p>
+            </div>
+          </div>
+          <div class="combo-total">
+            <p>
+              Total Price: <span class="old-total">$194.20</span>
+              <span class="new-total">$108.00</span>
+            </p>
+            <button class="add-to-cart-combo">Add selected to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dropdown -->
+      <div style="margin-bottom: 5%" class="faq-container">
+        <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            🏀 <span>How do I dry the shoes?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Great question. There's actually 3 ways you can do that:
+            <br />1- Air dry them <br />2- Toss the shoes bags inside the dryer
+            <br />3- Use our unsoak shoe dryer available on our website
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            👟 <span>Do 2 shoes fit in 1 shoe bag?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Yes, our shoe bags are designed to fit two shoes comfortably.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            🔊 <span>Does it make noise in the washing machine?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            No, our shoe bags are designed to minimize noise.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            📦 <span>What's included?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Each package includes 1 shoe bag and a detailed guide.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            📖 <span>How do I use it?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Simply place your shoes in the bag and put them in the washing
+            machine.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            ✅ <span>Do you have any guarantees?</span>
+            <span class="icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Yes, we offer a 30-day return policy with no questions asked.
+          </div>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>free shipping nationwide </span>
+          <span>USE CODE Save5 FOR $5 OFF </span>
+          <span>WORLWIDE SHIPPING</span>
+          <span>Don't miss the chance!</span>
+          <span>free shipping nationwide </span>
+          <span>USE CODE Save5 FOR $5 OFF </span>
+          <span>WORLWIDE SHIPPING</span>
+          <span>Don't miss the chance!</span>
+        </div>
+      </div>
+      <!-- //container humberger -->
+      <div class="start-review">
+        <div class="overall-rating">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <span class="review-count">18 Reviews ▼</span>
+        </div>
+        <div class="menu_hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="review-container">
+        <div class="review-card">
+          <img src="./img/1.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Lumina De F.</h3>
+            <p class="date">1/4/2025</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              Received product and immediately put to use on a pair of sneakers
+              - came out of the washer very clean...
+            </p>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img src="./img/3.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Kellicopter</h3>
+            <p class="date">12/23/2024</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              Super happy with how my white sneakers turned out after one
+              wash...
+            </p>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img src="./img/2.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Thania G.</h3>
+            <p class="date">12/23/2024</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              I absolutely love this Shoe Washing Machine Bag! It's a
+              game-changer for keeping my sneakers clean...
+            </p>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img src="./img/1.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Richard H.</h3>
+            <p class="date">12/23/2024</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              This shoe washer set is amazing. You can see in the before and
+              after photos how good the shoes came out...
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <img src="./img/1.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Richard H.</h3>
+            <p class="date">12/23/2024</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              This shoe washer set is amazing. You can see in the before and
+              after photos how good the shoes came out...
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <img src="./img/1.png" alt="Review Image" />
+          <div class="review-content">
+            <h3>Richard H.</h3>
+            <p class="date">12/23/2024</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              This shoe washer set is amazing. You can see in the before and
+              after photos how good the shoes came out...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/Shop.js"></script>
+  </body>
+</html>
