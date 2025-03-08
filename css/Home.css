@@ -65,7 +65,11 @@
 
 .navbar-expand-lg {
     padding: 0 5%;
-  }
+    border-bottom: 1px solid #ddd; /* Đường line màu xám nhạt */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-height: 80px; /* Đảm bảo navbar không quá thấp */
+}
   
 .navbar-nav .nav-item {
 margin-right: 15px;

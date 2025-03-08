@@ -53,6 +53,10 @@
 
 .navbar-expand-lg {
   padding: 0 5%;
+  border-bottom: 1px solid #ddd; /* Đường line màu xám nhạt */
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-height: 80px; /* Đảm bảo navbar không quá thấp */
 }
 
 .navbar-nav .nav-item {
@@ -78,7 +82,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 2% auto;
   align-items: stretch;
   overflow-y: hidden;
   width: 80%;
@@ -513,7 +517,7 @@ input:checked + .slider:before {
 .video_review_container_1 .text-section {
   flex: 1;
   padding: 40px;
-  background-color: #008080; /* Màu xanh lá cây đậm */
+  background-color: #007148; /* Màu xanh lá cây đậm */
   color: #fff;
   border-radius: 10px 0 0 10px;
 }
@@ -552,7 +556,7 @@ input:checked + .slider:before {
 .video_review_container_2 .text-section {
   flex: 1;
   padding: 40px;
-  background-color: #008080; /* Màu xanh lá cây đậm */
+  background-color: #007148; /* Màu xanh lá cây đậm */
   color: #fff;
   border-radius: 0 10px 10px 0;
   order: 2; /* Đặt text ở bên phải */

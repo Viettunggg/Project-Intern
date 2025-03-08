@@ -61,6 +61,10 @@
  
 .navbar-expand-lg {
     padding: 0 5%;
+    border-bottom: 1px solid #ddd; /* Đường line màu xám nhạt */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-height: 80px; /* Đảm bảo navbar không quá thấp */
 }
 
 .navbar-nav .nav-item {
@@ -223,28 +227,188 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
-.filter-options, .sort-options {
-    display: flex;
-    align-items: center;
+.filter-options span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding: 0;
+}
+
+.custom-dropdown-btn:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    width: 400px;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-header {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px !important;
+}
+
+.highest-price {
+    font-size: 14px;
+    font-weight:300;
+    color: black;
+}
+
+.price-inputs {
     gap: 10px;
 }
 
-select {
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    flex: 1;
+}
+
+.input-group .input-group-text {
+    background: none;
     border: none;
-    background: transparent;
+    font-size: 16px;
+    color: black;
+    padding: 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-container label {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: -3px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
     font-size: 14px;
+    width: 100%;
+}
+
+
+.text-purple {
+    color: #9b59b6;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.product-count {
-    font-size: 14px;
-    color: gray;
+.text-purple:hover {
+    text-decoration: underline;
 }
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check.disabled label {
+    color: #bbb;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    width: 300px
+}
+
+.sort-dropdown {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    border: none;
+}
+
+.product-count {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Subscrice Form */
+
+.subscrice_main {
+    margin-top: 2%;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.subscribe-container {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.subscribe-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subscribe-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    background: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #333;
+}
+
 
 /* Responsive */
 @media (max-width: 1024px) {
